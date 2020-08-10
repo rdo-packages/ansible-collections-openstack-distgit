@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bdd7af1d_731ae82c",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2020-08-10T15:42:32Z",
+      "side": 1,
+      "message": "The right short name for this license type, according to [1], is \"GPLv3+\".\n\n[1] - https://fedoraproject.org/wiki/Licensing:Main?rd\u003dLicensing#Software_License_List",
+      "range": {
+        "startLine": 18,
+        "startChar": 16,
+        "endLine": 18,
+        "endChar": 32
+      },
+      "revId": "a6767fd4abeabf6bf60a3366d97ddbe7d354ad97",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
