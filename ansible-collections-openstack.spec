@@ -11,6 +11,7 @@ BuildArch:      noarch
 
 BuildRequires:  git
 BuildRequires:  python3-pbr
+BuildRequires:  python3-devel
 
 Requires:       ansible >= 2.8.0
 Requires:       python3-openstacksdk >= 0.12.0
