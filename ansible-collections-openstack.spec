@@ -9,7 +9,7 @@ URL:            https://opendev.org/openstack/ansible-collections-openstack
 Source0:        https://galaxy.ansible.com/download/openstack-cloud-%{version}.tar.gz
 BuildArch:      noarch
 
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python3-pbr
 BuildRequires:  python3-devel
 
