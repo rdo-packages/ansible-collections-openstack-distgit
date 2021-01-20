@@ -1,12 +1,12 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           ansible-collections-openstack
-Version:        XXX
-Release:        XXX
+Version:        1.2.1
+Release:        1%{?dist}
 Summary:        Openstack Ansible collections
 License:        GPLv3+
 URL:            https://opendev.org/openstack/ansible-collections-openstack
-Source0:        https://galaxy.ansible.com/download/openstack-cloud-%{version}.tar.gz
+Source0:        https://github.com/openstack/%{name}/archive/%{upstream_version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  git
@@ -38,3 +38,6 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Wed Jan 20 2021 RDO <dev@lists.rdoproject.org> 1.2.1-1
+- Update to 1.2.1
+
