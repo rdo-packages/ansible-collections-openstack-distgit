@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef31a9f7_01bcd35b",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 155
+      },
+      "writtenOn": "2021-04-08T14:13:23Z",
+      "side": 1,
+      "message": "can we change it to \"global\" maybe? I\u0027ve got such issue when submitting spec file to Fedora. Just to keep it as close as possible. https://bugzilla.redhat.com/show_bug.cgi?id\u003d1946258#c2",
+      "range": {
+        "startLine": 4,
+        "startChar": 1,
+        "endLine": 4,
+        "endChar": 7
+      },
+      "revId": "af7e0d7080efcc241311be681b28d0c07322ea44",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
