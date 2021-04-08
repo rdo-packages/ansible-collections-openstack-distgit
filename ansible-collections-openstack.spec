@@ -12,8 +12,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           ansible-collections-openstack
-Version:        XXX
-Release:        XXX
+Version:        1.3.0
+Release:        1%{?dist}
 Summary:        Openstack Ansible collections
 License:        GPLv3+
 URL:            https://opendev.org/openstack/ansible-collections-openstack
@@ -49,3 +49,6 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Thu Apr 08 2021 Alfredo Moralejo <amoralej@redhat.com> 1.3.0-1
+- Update to 1.3.0
+
