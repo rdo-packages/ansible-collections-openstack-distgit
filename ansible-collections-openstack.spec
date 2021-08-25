@@ -20,7 +20,7 @@ BuildRequires:  git-core
 BuildRequires:  python3-pbr
 BuildRequires:  python3-devel
 
-Requires:       ansible >= 2.8.0
+Requires:       (ansible >= 2.8.0 or ansible-core >= 2.11)
 Requires:       python3-openstacksdk >= 0.13.0
 
 %description
