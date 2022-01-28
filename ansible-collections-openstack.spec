@@ -38,3 +38,4 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/ansible-collections-openstack/commit/6ed02eff2dfd43ffa4171084ed44c38bbf2387d1
