@@ -53,3 +53,4 @@ export SKIP_PIP_INSTALL=1
 * Wed Jan 20 2021 RDO <dev@lists.rdoproject.org> 1.2.1-1
 - Update to 1.2.1
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/ansible-collections-openstack/commit/b376e3e146bfb4e2689073ef0069d58cabaca465
