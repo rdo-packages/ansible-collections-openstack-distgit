@@ -50,3 +50,4 @@ export SKIP_PIP_INSTALL=1
 * Thu Apr 08 2021 Alfredo Moralejo <amoralej@redhat.com> 1.3.0-1
 - Update to 1.3.0
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/ansible-collections-openstack/commit/453601bde2f4ed1b98093bbffb030d5fed7010ba
