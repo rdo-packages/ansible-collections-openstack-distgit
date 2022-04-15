@@ -1,12 +1,16 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 938abd0d84baa6591e09d8a83d91432c50397bba
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 Name:           ansible-collections-openstack
-Version:        XXX
-Release:        XXX
+Version:        1.7.1
+Release:        1
 Summary:        Openstack Ansible collections
 License:        GPLv3+
 URL:            https://opendev.org/openstack/ansible-collections-openstack
-Source0:        https://galaxy.ansible.com/download/openstack-cloud-%{version}.tar.gz
+Source0:        https://github.com/openstack/%{name}/archive/%{commit}.tar.gz#/%{srcname}-%{shortcommit}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  git-core
@@ -20,7 +24,7 @@ Requires:       python3-openstacksdk >= 0.13.0
 Openstack Ansible collections
 
 %prep
-%autosetup -n ansible-collections-openstack.cloud-%{upstream_version}
+%autosetup -n %{name}-%{upstream_version} -S git
 
 %build
 %py3_build
@@ -38,3 +42,5 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Fri Apr 15 2022 RDO <dev@lists.rdoproject.org> - 1.7.1-1.938abd0dgit
+- Update to post 1.7.1 (938abd0d84baa6591e09d8a83d91432c50397bba)
