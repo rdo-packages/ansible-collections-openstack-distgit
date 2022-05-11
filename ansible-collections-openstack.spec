@@ -8,7 +8,7 @@
 %{!?dlrn: %global tarsources ansible-collections-openstack}
 
 Name:           ansible-collections-openstack
-Version:        1.7.1
+Version:        1.8.0
 Release:        1%{?alphatag}%{?dist}
 Summary:        Openstack Ansible collections
 License:        GPLv3+
@@ -45,5 +45,8 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Wed May 11 2022 RDO <dev@lists.rdoproject.org> 1.8.0-1.938abd0git
+- Update to 1.8.0
+
 * Fri Apr 15 2022 RDO <dev@lists.rdoproject.org> - 1.7.1-1.938abd0dgit
 - Update to post 1.7.1 (938abd0d84baa6591e09d8a83d91432c50397bba)
