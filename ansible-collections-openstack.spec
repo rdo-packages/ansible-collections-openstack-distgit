@@ -14,7 +14,11 @@ BuildRequires:  python3-pbr
 BuildRequires:  python3-devel
 
 Requires:       (ansible >= 2.8.0 or ansible-core >= 2.11)
-Requires:       python3-openstacksdk >= 0.13.0
+%if %{lua:print(rpm.vercmp(rpm.expand("%{version}"), '2.0.0'));} < 0
+Requires:       (python3-openstacksdk >= 0.36.0 and python3-openstacksdk < 1.0.0)
+%else
+Requires:       python3-openstacksdk >= 1.0.0
+%endif
 
 %description
 Openstack Ansible collections
