@@ -28,6 +28,7 @@ Openstack Ansible collections
 %install
 export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
+
 %py3_install
 
 %files
