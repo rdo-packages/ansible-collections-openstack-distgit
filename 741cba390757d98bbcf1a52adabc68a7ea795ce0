@@ -35,6 +35,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d696bb65_2b99e05d",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-08-02T09:56:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dd5791f9_e8948f3e",
+      "revId": "741cba390757d98bbcf1a52adabc68a7ea795ce0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4a07ebaf_6d623d9b",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-08-02T08:59:52Z",
       "side": 1,
       "message": "Want to remove these as well?\n\n bindep.txt\n docs\n galaxy.yml\n setup.cfg\n setup.py\n tools\n tox.ini",
+      "revId": "741cba390757d98bbcf1a52adabc68a7ea795ce0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "316903a2_e3268fe3",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-08-02T09:56:22Z",
+      "side": 1,
+      "message": "We need galaxy.yml for the installation, but note that it\u0027s no shipped in package at the end.\nsetup.cfg, tools and tox.ini are not shipped in the package",
+      "parentUuid": "4a07ebaf_6d623d9b",
       "revId": "741cba390757d98bbcf1a52adabc68a7ea795ce0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
