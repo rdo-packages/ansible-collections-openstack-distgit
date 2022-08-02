@@ -18,6 +18,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6fb9d33_2774d636",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-08-02T11:27:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ab8415f4_5ebe3f8d",
+      "revId": "d62ebf941d877272da116112088ad4bd92f9132d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a7db04c0_b953232d",
