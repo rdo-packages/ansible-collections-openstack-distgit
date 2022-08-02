@@ -16,6 +16,23 @@
       "message": "Proposed in parallel in Fedora Rawhide [1] to clear FTBFS [2]\n\n[1] https://src.fedoraproject.org/rpms/ansible-collections-openstack/pull-request/1\n[2] https://bugzilla.redhat.com/show_bug.cgi?id\u003d2113106",
       "revId": "741cba390757d98bbcf1a52adabc68a7ea795ce0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a07ebaf_6d623d9b",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 753
+      },
+      "writtenOn": "2022-08-02T08:59:52Z",
+      "side": 1,
+      "message": "Want to remove these as well?\n\n bindep.txt\n docs\n galaxy.yml\n setup.cfg\n setup.py\n tools\n tox.ini",
+      "revId": "741cba390757d98bbcf1a52adabc68a7ea795ce0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
