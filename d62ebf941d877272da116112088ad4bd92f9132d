@@ -22,6 +22,30 @@
       },
       "revId": "d62ebf941d877272da116112088ad4bd92f9132d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95949368_404da31b",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-08-02T10:59:35Z",
+      "side": 1,
+      "message": "There were an attempt to bump openstacksdk to 0.99.0 in zed-uc but was reverted with [1]. I think we should keep it, just in case.\n\n[1] https://review.rdoproject.org/r/c/rdoinfo/+/43207",
+      "parentUuid": "a7db04c0_b953232d",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 6
+      },
+      "revId": "d62ebf941d877272da116112088ad4bd92f9132d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
