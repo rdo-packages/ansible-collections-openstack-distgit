@@ -20,6 +20,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "dd5791f9_e8948f3e",
+        "filename": "ansible-collections-openstack.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 753
+      },
+      "writtenOn": "2022-08-02T09:01:27Z",
+      "side": 1,
+      "message": "Better add \u003c 0.99.0?\n\nansible-collections-openstack\u003c2.0.0 is only compatible to openstacksdk\u003c0.99.0",
+      "revId": "741cba390757d98bbcf1a52adabc68a7ea795ce0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4a07ebaf_6d623d9b",
         "filename": "ansible-collections-openstack.spec",
         "patchSetId": 1
