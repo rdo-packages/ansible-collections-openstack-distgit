@@ -1,40 +1,40 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%global collection_namespace openstack
+%global collection_name cloud
+
+%{?dlrn: %global tarsources ansible-collections-openstack.cloud}
+%{!?dlrn: %global tarsources ansible-collections-openstack}
+
 Name:           ansible-collections-openstack
 Version:        XXX
 Release:        XXX
 Summary:        Openstack Ansible collections
 License:        GPLv3+
-URL:            https://opendev.org/openstack/ansible-collections-openstack
-Source0:        https://galaxy.ansible.com/download/openstack-cloud-%{version}.tar.gz
+URL:            %{ansible_collection_url}
+Source0:        https://github.com/openstack/%{name}/archive/%{upstream_version}.tar.gz#/%{collection_namespace}-%{collection_name}-%{version}.tar.gz
 BuildArch:      noarch
 
-BuildRequires:  git-core
-BuildRequires:  python3-pbr
-BuildRequires:  python3-devel
-
-Requires:       (ansible >= 2.8.0 or ansible-core >= 2.11)
+BuildRequires:  ansible-packaging
 Requires:       python3-openstacksdk >= 0.13.0
 
 %description
 Openstack Ansible collections
 
 %prep
-%autosetup -n ansible-collections-openstack.cloud-%{upstream_version}
+%autosetup -n %{tarsources}-%{upstream_version}
+sed -i -e 's/version:.*/version: %{version}/' galaxy.yml
+rm -vr changelogs/ ci/ contrib/ tests/ ./galaxy.yml.in .zuul.yaml
 
 %build
-%py3_build
+%ansible_collection_build
 
 %install
-export PBR_VERSION=%{version}
-export SKIP_PIP_INSTALL=1
-%py3_install
+%ansible_collection_install
 
 %files
-
 %doc README.md
 %license COPYING
-%{python3_sitelib}/ansible_collections_openstack.cloud-*.egg-info
-%{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
+%{ansible_collection_files}
 
 %changelog
