@@ -1,12 +1,18 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%define upstream_name ansible-pacemaker
+%global commit ed36d82a0c60a841d2f30c61a50d60531481b2cc
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 Name:           ansible-collections-openstack
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Openstack Ansible collections
 License:        GPLv3+
 URL:            https://opendev.org/openstack/ansible-collections-openstack
 Source0:        https://galaxy.ansible.com/download/openstack-cloud-%{version}.tar.gz
+Source0:        https://github.com/openstack/ansible-collections-openstack/archive/%{upstream_version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  git-core
@@ -38,3 +44,5 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Fri Nov 04 2022 Alfredo Moralejo <amoralej@redhat.com> - 2.0.0-0.1.ed36d82git
+- Update to pre-2.0.0 commit (ed36d82a0c60a841d2f30c61a50d60531481b2cc)
