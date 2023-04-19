@@ -12,7 +12,7 @@
 
 Name:           ansible-collections-openstack
 Version:        2.0.0
-Release:        0.1%{?alphatag}%{?dist}
+Release:        0.2%{?alphatag}%{?dist}
 Summary:        Openstack Ansible collections
 License:        GPLv3+
 URL:            https://opendev.org/openstack/ansible-collections-openstack
@@ -23,7 +23,7 @@ BuildRequires:  git-core
 BuildRequires:  python3-pbr
 BuildRequires:  python3-devel
 
-Requires:       (ansible >= 2.8.0 or ansible-core >= 2.11)
+Requires:       openstack-ansible-core
 Requires:       python3-openstacksdk >= 0.13.0
 
 %description
@@ -48,5 +48,8 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Wed Apr 19 2023 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-0.2.ed36d82git
+- Depend on openstack-ansible-core for compatibility with python 3.9
+
 * Fri Nov 04 2022 Alfredo Moralejo <amoralej@redhat.com> - 2.0.0-0.1.ed36d82git
 - Update to pre-2.0.0 commit (ed36d82a0c60a841d2f30c61a50d60531481b2cc)
