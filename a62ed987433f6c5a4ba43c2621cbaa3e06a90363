@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0b44aa4_ef4bc257",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-03-13T13:37:18Z",
+      "side": 1,
+      "message": "The failure appears when creating the tarball for the SRPM, so before the actual DLRN build.\nI proposed a patch upstream [1]\n\n[1] https://review.opendev.org/c/openstack/ansible-collections-openstack/+/912772",
+      "revId": "a62ed987433f6c5a4ba43c2621cbaa3e06a90363",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
