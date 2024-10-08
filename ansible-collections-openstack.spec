@@ -4,7 +4,7 @@ Name:           ansible-collections-openstack
 Version:        XXX
 Release:        XXX
 Summary:        Openstack Ansible collections
-License:        GPLv3+
+License:        GPL-3.0-or-later
 URL:            https://opendev.org/openstack/ansible-collections-openstack
 Source0:        https://galaxy.ansible.com/download/openstack-cloud-%{version}.tar.gz
 BuildArch:      noarch
