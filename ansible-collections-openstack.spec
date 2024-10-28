@@ -13,7 +13,11 @@ BuildRequires:  git-core
 BuildRequires:  python3-pbr
 BuildRequires:  python3-devel
 
+%if 0%{?rhel}
 Requires:       openstack-ansible-core
+%else
+Requires:       ansible-core
+%endif
 Requires:       python3-openstacksdk >= 0.13.0
 
 %description
