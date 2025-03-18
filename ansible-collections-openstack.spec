@@ -1,8 +1,10 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources ansible-collections-openstack}
+%{!?dlrn: %global tarsources ansible_collections_openstack}
 
 Name:           ansible-collections-openstack
-Version:        XXX
-Release:        XXX
+Version:        0.2.0
+Release:        1%{?dist}
 Summary:        Openstack Ansible collections
 License:        GPL-3.0-or-later
 URL:            https://opendev.org/openstack/ansible-collections-openstack
@@ -42,3 +44,6 @@ export SKIP_PIP_INSTALL=1
 %{_datadir}/ansible/collections/ansible_collections/openstack/cloud/
 
 %changelog
+* Tue Mar 18 2025 RDO <dev@lists.rdoproject.org> 0.2.0-1
+- Update to 0.2.0
+
