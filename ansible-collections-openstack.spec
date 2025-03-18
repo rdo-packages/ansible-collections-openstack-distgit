@@ -1,4 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources ansible-collections-openstack}
+%{!?dlrn: %global tarsources ansible_collections_openstack}
 
 Name:           ansible-collections-openstack
 Version:        XXX
